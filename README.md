@@ -44,7 +44,7 @@ A safe Python environment setup
 Ths module needs some Python modules installable via pip, namely tldextract. It will help us to automatically fetch parent domain.
 
 Synology is known for wiping custom Python module you install via pip. This is why we're better of creating a virtualenv at /usr/local or other safe location. In the furue we will convert the entire script to Python.
-
+```
 curl https://bootstrap.pypa.io/get-pip.py | python
 pip install virtualenv
 # create virtualenv twice to ensure creation of "activate" script
@@ -54,7 +54,7 @@ virtualenv /usr/local/SynologyCloudflareDDNS
 . /usr/local/SynologyCloudflareDDNS/bin/activate
 # install the packages we need there (cloudflare will be used in the future):
 pip install tldextract cloudflare
-
+```
 
 ### Get Cloudflare parameters
 
